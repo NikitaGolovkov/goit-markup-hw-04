@@ -94,7 +94,7 @@ div > img {
 	text-decoration: none;
 }
 
-a > span {
+.logo a > span {
 	color: var(--logo-part);
 }
 
@@ -132,25 +132,10 @@ a > span {
 	align-items: center;
 }
 
-.icon-mail,
-.icon-tel {
-	fill: var(--text-color);
-}
-
 .contacts-header {
 	display: flex;
 	align-items: center;
 	margin-left: auto;
-}
-
-.mailtext,
-.teltext {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.142;
-	letter-spacing: 0.02em;
-	color: var(--text-color);
 }
 
 .contacts-mail {
@@ -158,31 +143,54 @@ a > span {
 	align-items: center;
 	margin-right: 30px;
 	text-decoration: none;
+	color: #757575;
+	fill: #757575;
+}
+
+.contacts-mail:focus,
+.contacts-mail:hover {
+	color: var(--logo-part);
+	fill: var(--logo-part);
+}
+
+.icon-mail {
+	margin-right: 10px;
+}
+
+.mailtext {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 
 .contacts-tel {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
+	color: #757575;
+	fill: #757575;
 }
 
-.icon-mail,
+.contacts-tel:focus,
+.contacts-tel:hover {
+	color: var(--logo-part);
+	fill: var(--logo-part);
+}
+
 .icon-tel {
 	margin-right: 10px;
 }
 
-.contacts-mail:hover .icon-mail,
-.contacts-mail:focus .icon-mail,
-.contacts-tel:hover .icon-tel,
-.contacts-tel:focus .icon-tel {
-	fill: var(--logo-part);
-}
+.teltext {
+	font-style: normal;
 
-.mailtext:hover,
-.mailtext:focus,
-.teltext:hover,
-.teltext:focus {
-	color: var(--logo-part);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 
 /* Герой секция */
@@ -509,6 +517,7 @@ a > span {
 	line-height: 1.5;
 	text-align: center;
 	border: none;
+	border-radius: 4px;
 }
 
 .filter-btn:hover,
@@ -516,6 +525,7 @@ a > span {
 	color: var(--white-color);
 	background-color: var(--logo-part);
 	cursor: pointer;
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .social-footer {
@@ -575,6 +585,11 @@ a > span {
 
 .portfolio-list .item:nth-last-child(-n + 3) {
 	margin-bottom: 0;
+}
+
+.portfolio-list .item:hover,
+.portfolio-list .item:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item {
