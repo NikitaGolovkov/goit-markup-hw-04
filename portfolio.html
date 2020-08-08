@@ -35,11 +35,20 @@
 						</li>
 					</ul>
 				</nav>
-				<div>
-					<img src="./images/envelope.svg" alt="иконка конверта" />
-					<a href="mailto:info@devstudio.com" class="contacts-mail">info@devstudio.com</a>
-					<img src="./images/smartphone.svg" alt=" иконка телефона" />
-					<a href="tel:+380991111111" class="contacts-tel">+38 099 111 11 11</a>
+				<div class="contacts-header">
+					<a href="mailto:info@devstudio.com" class="contacts-mail">
+						<svg class="icon-mail" width="16" height="12">
+							<use href="./images/icons/sprite.svg#envelope"></use>
+						</svg>
+						<span class="mailtext">info@devstudio.com</span>
+					</a>
+
+					<a href="tel:+380991111111" class="contacts-tel">
+						<svg class="icon-tel" width="10" height="16">
+							<use href="./images/icons/sprite.svg#smartphone"></use>
+						</svg>
+						<span class="teltext">+38 099 111 11 11</span>
+					</a>
 				</div>
 			</div>
 		</header>
@@ -102,7 +111,7 @@
 						<li class="item">
 							<a href="#" class="portfolio-item">
 								<img src="./images/portfolio/img4.jpg" width="370" height="294" alt="" />
-								<div class="description">
+								<div class="description-p">
 									<h2 class="portfolio-tittle">Проект Prime</h2>
 									<p class="portfolio-text">Маркетинг</p>
 									<p class="portfolio-description visually-hidden">
@@ -179,7 +188,7 @@
 		<footer class="footer">
 			<div class="container footer-flex">
 				<div class="logo-address">
-					<div class="logo logo-footer">
+					<div class="logo-footer logo">
 						<a href="./index.html">
 							<span class="first-word">Web</span>
 							Studio
@@ -196,35 +205,57 @@
 
 				<div>
 					<p class="footer-text">присоединяйтесь</p>
-					<ul class="social">
-						<li class="social-link">
+					<ul class="social-footer">
+						<li class="social-link-item-footer">
 							<a
 								href="https://www.instagram.com/"
+								class="social-link-footer"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="ссылка Инстаграм"
 							>
-								<img src="./images/social/instagram.svg" alt="" />
+								<svg class="social-item-footer" width="20" height="20">
+									<use href="./images/icons/sprite.svg#instagram"></use>
+								</svg>
 							</a>
 						</li>
-						<li class="social-link">
-							<a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Твиттер">
-								<img src="./images/social/twitter.svg" alt="" />
+						<li class="social-link-item-footer">
+							<a
+								href="https://twitter.com/"
+								class="social-link-footer"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="ссылка Твиттер"
+							>
+								<svg class="social-item-footer" width="20" height="20">
+									<use href="./images/icons/sprite.svg#twitter"></use>
+								</svg>
 							</a>
 						</li>
-						<li class="social-link">
-							<a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="ссылка Фейсбук">
-								<img src="./images/social/facebook.svg" alt="" />
+						<li class="social-link-item-footer">
+							<a
+								href="https://facebook.com/"
+								class="social-link-footer"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="ссылка Фейсбук"
+							>
+								<svg class="social-item-footer" width="20" height="20">
+									<use href="./images/icons/sprite.svg#facebook"></use>
+								</svg>
 							</a>
 						</li>
-						<li class="social-link">
+						<li class="social-link-item-footer">
 							<a
 								href="https://www.linkedin.com/"
+								class="social-link-footer"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="ссылка Линкедин"
 							>
-								<img src="./images/social/linkedin.svg" alt="" />
+								<svg class="social-item-footer" width="20" height="20">
+									<use href="./images/icons/sprite.svg#linkedin"></use>
+								</svg>
 							</a>
 						</li>
 					</ul>
